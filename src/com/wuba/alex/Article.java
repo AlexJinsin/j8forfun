@@ -2,11 +2,12 @@ package com.wuba.alex;
 
 import java.security.PublicKey;
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 /**
  * Created by Alex on 2017/4/10.
  */
-public class Article {
+public class Article implements  Runnable{
 
     private  String title = null;
     private  String author = null;;
@@ -30,4 +31,10 @@ public class Article {
     }
 
 
+    @Override
+    public void run() {
+
+        System.out.println("in thread");
+
+    }
 }
