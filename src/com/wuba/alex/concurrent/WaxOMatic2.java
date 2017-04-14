@@ -1,6 +1,8 @@
 //: concurrency/waxomatic2/WaxOMatic2.java
 // Using Lock and Condition objects.
 package com.wuba.alex.concurrent;
+import sun.tools.tree.Node;
+
 import java.util.concurrent.*;
 import java.util.concurrent.locks.*;
 
@@ -47,6 +49,10 @@ class Car {
 }
 
 class WaxOn implements Runnable {
+
+
+
+
   private Car car;
   public WaxOn(Car c) { car = c; }
   public void run() {
