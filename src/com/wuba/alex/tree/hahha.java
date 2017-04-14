@@ -17,9 +17,9 @@ public class hahha {
 
 
         System.out.println(father.getElement());
-        System.out.println(father.getLeft());
-        System.out.println(father.getRight());
-        System.out.println(father.getLeft().getElement());
+        System.out.println(father.left());
+        System.out.println(father.right());
+        System.out.println(father.left().getElement());
 
 
 

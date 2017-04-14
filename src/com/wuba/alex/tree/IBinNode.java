@@ -11,10 +11,10 @@ public interface IBinNode {
     public Object getElement();
     public void setElement(Object element);
 
-    public IBinNode getLeft();
+    public IBinNode left();
     public void setLeft(IBinNode left);
 
-    public IBinNode getRight();
+    public IBinNode right();
     public void setRight(IBinNode right);
 
     public boolean isLeft();

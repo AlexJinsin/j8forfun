@@ -38,7 +38,7 @@ public class BinNode implements IBinNode{
     }
 
     @Override
-    public IBinNode getLeft() {
+    public IBinNode left() {
         return left;
     }
 
@@ -48,7 +48,7 @@ public class BinNode implements IBinNode{
     }
 
     @Override
-    public IBinNode getRight() {
+    public IBinNode right() {
         return right;
     }
 
