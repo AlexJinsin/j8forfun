@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d555bae5-8ee2-4e0c-a2d8-247cb050aa18" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/wuba/alex/tree/BinTree.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/j8forfun/com/wuba/alex/tree/hahha.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/wuba/alex/tree/BinNode.java" afterPath="$PROJECT_DIR$/src/com/wuba/alex/tree/BinNode.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/wuba/alex/tree/IBinNode.java" afterPath="$PROJECT_DIR$/src/com/wuba/alex/tree/IBinNode.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/wuba/alex/tree/hahha.java" afterPath="$PROJECT_DIR$/src/com/wuba/alex/tree/hahha.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/wuba/alex/tree/BinTree.java" afterPath="$PROJECT_DIR$/src/com/wuba/alex/tree/BinTree.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -72,8 +67,8 @@
       <file leaf-file-name="BinTree.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/wuba/alex/tree/BinTree.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="446">
-              <caret line="63" column="21" lean-forward="false" selection-start-line="63" selection-start-column="21" selection-end-line="63" selection-end-column="21" />
+            <state relative-caret-position="346">
+              <caret line="58" column="0" lean-forward="true" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -737,12 +732,12 @@
       <option name="presentableId" value="Default" />
       <updated>1491806049408</updated>
       <workItem from="1491806054467" duration="28727000" />
-      <workItem from="1492069941883" duration="13629000" />
+      <workItem from="1492069941883" duration="15034000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="42356000" />
+    <option name="totallyTimeSpent" value="43761000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -755,7 +750,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="873" y="23" width="1047" height="1057" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1085,8 +1079,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/wuba/alex/tree/BinTree.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="446">
-          <caret line="63" column="21" lean-forward="false" selection-start-line="63" selection-start-column="21" selection-end-line="63" selection-end-column="21" />
+        <state relative-caret-position="346">
+          <caret line="58" column="0" lean-forward="true" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

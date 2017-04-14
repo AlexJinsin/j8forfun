@@ -36,6 +36,7 @@ public class BinTree {
 
     }
 
+
     public void preTraversal(IBinNode node) {
 
         if (node == null)
@@ -46,23 +47,48 @@ public class BinTree {
 
     }
 
-    public void inorderTra(BinNode node) {
+    public void inorderTra(IBinNode node) {
+
+        if (node == null)
+            return;
+        inorderTra(node.left());
+        System.out.print(node.getElement() + " ");
+        inorderTra(node.right());
 
     }
 
-    public void posterderTra(BinNode node) {
+    public void posterderTra(IBinNode node) {
 
+        if (node == null)
+            return;
+        posterderTra(node.left());
+        posterderTra(node.right());
+        System.out.print(node.getElement() + " ");
     }
 
     public static void main(String[] args) {
+
+
+
+
 
         System.out.println("create tree ");
         List testData = new LinkedList();
         for (int i = 0; i < 10 ;i ++) {
             testData.add(i);
         }
+
         BinTree tree = new BinTree(testData);
+
+
+
+        System.out.println();
+        System.out.println("先序遍历");
         tree.preTraversal(tree.root);
+        System.out.println("中序遍历");
+        tree.inorderTra(tree.root);
+        System.out.println("后序遍历");
+        tree.posterderTra(tree.root);
     }
 
 }
