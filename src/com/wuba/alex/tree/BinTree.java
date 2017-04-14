@@ -4,6 +4,7 @@ import apple.laf.JRSUIConstants;
 
 import java.util.LinkedList;
 import java.util.List;
+import java.util.Queue;
 
 /**
  * Created by Alex on 2017/4/14.
@@ -13,6 +14,8 @@ public class BinTree {
     private int size;
     private BinNode root;
     private List data ;
+
+    private Queue<IBinNode> queue ;
 
     public BinTree(List data) {
 
@@ -32,7 +35,18 @@ public class BinTree {
         return bn;
     }
 
-    public void distroyBinTree(IBinNode node) {
+    public void initQ(IBinNode node) {
+        this.queue = new LinkedList();
+        queue.add(node);
+    }
+
+
+
+
+    public void distroyBinTree() {
+
+        //未完成
+        root = null;
 
     }
 
@@ -46,6 +60,43 @@ public class BinTree {
         preTraversal(node.right());
 
     }
+
+
+    /**
+     * 层次便利一层一层的来 借助一个队列完成
+     */
+    public void cengci() {
+
+
+        if (queue.size() == 0)
+            return;
+        IBinNode n = queue.poll();
+        System.out.println(n.getElement());
+        if (n.left()!=null) {
+            queue.add(n.left());
+        }
+        if (n.right()!=null) {
+            queue.add(n.right());
+        }
+        cengci();
+
+
+//        while (queue.size()!=0) {
+//            IBinNode n = queue.poll();
+//            System.out.println(n.getElement());
+//            if (n.left()!=null) {
+//                queue.add(n.left());
+//            }
+//            if (n.right()!=null) {
+//                queue.add(n.right());
+//            }
+//        }
+
+    }
+
+
+
+
 
     public void inorderTra(IBinNode node) {
 
@@ -69,26 +120,34 @@ public class BinTree {
     public static void main(String[] args) {
 
 
+        while (true) {
 
 
+            System.out.println("create tree ");
+            List testData = new LinkedList();
+            for (int i = 0; i < 10; i++) {
+                testData.add(i);
+            }
 
-        System.out.println("create tree ");
-        List testData = new LinkedList();
-        for (int i = 0; i < 10 ;i ++) {
-            testData.add(i);
+            BinTree tree = new BinTree(testData);
+
+
+            System.out.println();
+            System.out.println("先序遍历");
+            tree.preTraversal(tree.root);
+            System.out.println("中序遍历");
+            tree.inorderTra(tree.root);
+            System.out.println("后序遍历");
+            tree.posterderTra(tree.root);
+
+            tree.initQ(tree.root);
+            tree.cengci();
+
+            System.out.println("销毁树");
+            tree.distroyBinTree(tree.root);
+            tree.root = null;
+            System.out.println("销毁后  后续便利");
+            tree.posterderTra(tree.root);
         }
-
-        BinTree tree = new BinTree(testData);
-
-
-
-        System.out.println();
-        System.out.println("先序遍历");
-        tree.preTraversal(tree.root);
-        System.out.println("中序遍历");
-        tree.inorderTra(tree.root);
-        System.out.println("后序遍历");
-        tree.posterderTra(tree.root);
     }
-
 }
